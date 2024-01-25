@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root
+{
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;
+}
+body.light
+{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
+body
+{
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'Poppins' 'sans-serif';
+}
+*
+{
+    margin: 0;
+    padding: 0px;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* service */
+.service .container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.service .service-item-inner
+{
+    background-color: #26292d;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 35px 10px;
+    text-align: center;
+    transition: all 0.35 ease;
+    margin: 10px;
+    max-width: 325px;
+    height: 400px;
+}
+.service .service-item-inner:hover
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.service .service-item-inner .icon
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.service .service-item-inner .icon .fa
+{
+    font-size: 40px;
+    line-height: 60px;
+    color: #ff764c;
+    transition: all 0.3s ease;
+}
+.service .service-item-inner:hover .icon 
+{
+    background-color: #ff764c;
+}
+.service .service-item-inner:hover .icon .fa
+{
+font-size: 25px;
+color: #ffffff;
+}
+.service .service-item-inner h4
+{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.service .service-item-inner p
+{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
